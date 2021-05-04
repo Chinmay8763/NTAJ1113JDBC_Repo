@@ -33,7 +33,7 @@ public class CsProcedureCallTest {
 			//register JDBC driver
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			//establish the connection
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "scott", "tiger");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "scott", "manager");
 			//create CallableStatement object
 			if(con!=null)
 				cs=con.prepareCall(CALL_PROCEDURE);
